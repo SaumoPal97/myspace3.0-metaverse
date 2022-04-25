@@ -4,6 +4,8 @@ import glassImg from "./images/glass.png";
 import logImg from "./images/log.jpg";
 import woodImg from "./images/wood.png";
 import blockImg from "./images/block.png";
+import appleImg from "./images/apple.jpeg";
+import newtonImg from "./images/newton.jpeg";
 import { TextureLoader, NearestFilter, LinearMipMapLinearFilter } from "three";
 
 export const dirt = new TextureLoader().load(dirtImg);
@@ -18,6 +20,8 @@ export const nft1 = new TextureLoader().load(
 export const nft2 = new TextureLoader().load(
   "https://bafybeidmom45vu5vwrm2rqu6vxruy5f7wrugllhqfufhqmm6dknpwbbo3a.ipfs.infura-ipfs.io/"
 );
+export const apple = new TextureLoader().load(appleImg);
+export const newton = new TextureLoader().load(newtonImg);
 
 dirt.magFilter = NearestFilter;
 dirt.minFilter = LinearMipMapLinearFilter;
@@ -35,3 +39,7 @@ nft1.magFilter = NearestFilter;
 nft1.minFilter = LinearMipMapLinearFilter;
 nft2.magFilter = NearestFilter;
 nft2.minFilter = LinearMipMapLinearFilter;
+apple.magFilter = NearestFilter;
+apple.minFilter = LinearMipMapLinearFilter;
+newton.magFilter = NearestFilter;
+newton.minFilter = LinearMipMapLinearFilter;

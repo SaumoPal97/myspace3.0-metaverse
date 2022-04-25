@@ -1,12 +1,12 @@
-import React from 'react';
-import { Canvas } from 'react-three-fiber';
-import { Sky } from 'drei';
-import { Physics } from 'use-cannon';
+import React from "react";
+import { Canvas } from "react-three-fiber";
+import { Sky } from "drei";
+import { Physics } from "use-cannon";
 
-import { Ground } from './components/Ground';
-import Cubes from './components/Cubes';
-import { Player } from './components/Player';
-import { Hud } from './components/Hud';
+import { Ground } from "./components/Ground";
+import Cubes from "./components/Cubes";
+import { Player } from "./components/Player";
+import { Hud } from "./components/Hud";
 
 function App() {
   return (

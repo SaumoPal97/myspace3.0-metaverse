@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { useFrame, useThree } from 'react-three-fiber';
-import { useStore } from '../hooks/useStore';
-import * as textures from '../textures';
+import React, { useState, useEffect } from "react";
+import { useFrame, useThree } from "react-three-fiber";
+import { useStore } from "../hooks/useStore";
+import * as textures from "../textures";
 
 const Material = ({ args, color, texture, isActive, ...props }) => {
   return (
@@ -33,7 +33,7 @@ const MaterialContainer = ({ args, color, activeTexture, ...props }) => {
             isActive={activeTextureIndex === index}
             texture={textures[key]}
             args={[0.2, 0.2, 0.05]}
-            position={[-0.5 + index / 4, 0, 0.01]}
+            position={[-1.1 + index / 4, 0, 0.01]}
           />
         );
       })}
@@ -81,7 +81,7 @@ export const Hud = ({ position }) => {
       <group position={hudState.position} rotation={hudState.rotation}>
         <group position={position}>
           <MaterialContainer
-            args={[1.3, 0.3, 0.01]}
+            args={[2.65, 0.3, 0.01]}
             color="#222"
             activeTexture={activeTexture}
             hudVisible={hudVisible}

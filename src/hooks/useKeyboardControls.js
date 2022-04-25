@@ -22,6 +22,8 @@ function textureByKey(key, texture) {
     "block",
     "nft1",
     "nft2",
+    "apple",
+    "newton",
   ];
   let newTextureIndex;
   console.log("prev ", texture);
